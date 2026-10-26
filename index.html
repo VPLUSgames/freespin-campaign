@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#140021">
+  <title>VPLUS Free Spin Promotion</title>
+  <style>
+    :root {
+      --bg: #140021;
+      --panel: rgba(58, 18, 91, .92);
+      --panel-2: #241039;
+      --gold: #ffd54a;
+      --gold-2: #d9aa2b;
+      --text: #fff;
+      --muted: #e4d9ee;
+      --line: rgba(255,255,255,.15);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at top, rgba(104, 36, 145, .48), transparent 48%),
+        var(--bg);
+      line-height: 1.55;
+    }
+    .banner {
+      min-height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 42px 20px;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(255,213,74,.2), transparent 22%),
+        radial-gradient(circle at 80% 70%, rgba(255,213,74,.16), transparent 25%),
+        linear-gradient(135deg, #32104d, #170026 60%, #4a1765);
+      border-bottom: 3px solid var(--gold-2);
+      position: relative;
+      overflow: hidden;
+    }
+    .banner::before, .banner::after {
+      content: "✦";
+      position: absolute;
+      color: rgba(255,213,74,.38);
+      font-size: 56px;
+    }
+    .banner::before { left: 8%; top: 18%; }
+    .banner::after { right: 9%; bottom: 12%; }
+    .banner-content { max-width: 850px; position: relative; z-index: 1; }
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+    }
+    .banner h1 {
+      color: var(--gold);
+      font-size: clamp(34px, 6vw, 62px);
+      line-height: 1.08;
+      text-transform: uppercase;
+      text-shadow: 0 3px 0 #6b3b00, 0 0 22px rgba(255,213,74,.2);
+      margin-bottom: 12px;
+    }
+    .banner p { font-size: clamp(15px, 2.5vw, 20px); color: #fff7d5; }
+    .container { width: min(1080px, 100%); margin: 0 auto; padding: 28px 18px 10px; }
+    .intro { text-align: center; color: var(--muted); margin: 0 auto 24px; max-width: 780px; }
+    .intro strong { color: var(--gold); }
+    .section-title {
+      text-align: center; color: var(--gold); font-size: clamp(24px, 4vw, 32px);
+      margin: 34px 0 18px;
+    }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card {
+      background: var(--panel);
+      border: 1.5px solid var(--gold-2);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.16);
+    }
+    .card h2 { color: var(--gold); font-size: 20px; margin-bottom: 14px; }
+    .detail-row {
+      display: grid; grid-template-columns: minmax(120px, .8fr) minmax(0, 1.2fr);
+      gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line);
+    }
+    .detail-row:last-child { border-bottom: 0; }
+    .detail-row .label { color: #e9d9f5; font-weight: 700; }
+    .detail-row .value { text-align: right; color: #fff; }
+    .highlight { color: var(--gold); font-weight: 800; }
+    .games {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;
+    }
+    .game {
+      display: flex; align-items: center; gap: 12px;
+      background: rgba(255,255,255,.055); border: 1px solid var(--line);
+      border-radius: 10px; padding: 13px;
+    }
+    .game-id {
+      flex: 0 0 82px; color: var(--gold); font-size: 12px; font-weight: 800;
+      background: rgba(255,213,74,.1); border: 1px solid rgba(255,213,74,.25);
+      border-radius: 7px; padding: 6px 5px; text-align: center;
+    }
+    .game-name { font-weight: 700; font-size: 14px; }
+    .terms { padding-left: 22px; }
+    .terms li { padding: 0 0 12px 4px; color: #f5eefb; }
+    .terms li::marker { color: var(--gold); font-weight: 800; }
+    .notice {
+      margin-top: 20px; border-left: 4px solid var(--gold);
+      padding: 14px 16px; background: rgba(255,213,74,.08); border-radius: 0 10px 10px 0;
+      color: #fff4c8;
+    }
+    .bottom {
+      text-align: center; color: var(--gold); font-size: 19px; font-weight: 800;
+      padding: 30px 10px 38px;
+    }
+    .footer { text-align: center; color: #bba9ca; font-size: 12px; padding: 0 15px 24px; }
+    @media (max-width: 700px) {
+      .cards, .games { grid-template-columns: 1fr; }
+      .detail-row { grid-template-columns: 1fr; gap: 4px; }
+      .detail-row .value { text-align: left; }
+      .banner { min-height: 220px; }
+      .card { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-content">
+      <div class="eyebrow">Promosi Spesial VPLUS</div>
+      <h1>Free Spin Bonus</h1>
+      <p>Kumpulkan turnover yang memenuhi syarat dan dapatkan 10 Free Spins!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="intro">
+      Selesaikan <strong>MYR 200 valid turnover</strong> dalam game yang memenuhi syarat
+      dalam satu hari untuk mendapatkan <strong>10 Free Spins</strong>.
+    </p>
+
+    <section class="cards" aria-label="Detail promosi">
+      <article class="card">
+        <h2>🎁 Detail Promosi</h2>
+        <div class="detail-row">
+          <div class="label">Cara Berpartisipasi</div>
+          <div class="value">Kumpulkan turnover valid MYR 200 dalam game yang memenuhi syarat dalam satu hari.</div>
+        </div>
+        <div class="detail-row">
+          <div class="label">Hadiah</div>
+          <div class="value"><span class="highlight">10 Free Spins</span></div>
+        </div>
+        <div class="detail-row">
+          <div class="label">Periode Kampanye</div>
+          <div class="value">9 Oktober 2026, 12:00 – 23 Oktober 2026, 12:00 (GMT+8)</div>
+        </div>
+        <div class="detail-row">
+          <div class="label">Batas Klaim</div>
+          <div class="value">1 klaim per pemain per hari</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>💰 Ketentuan Penarikan</h2>
+        <div class="detail-row">
+          <div class="label">Nilai Taruhan Free Spin</div>
+          <div class="value"><span class="highlight">MYR 1</span> per putaran</div>
+        </div>
+        <div class="detail-row">
+          <div class="label">Persyaratan Turnover</div>
+          <div class="value">Kemenangan dari Free Spins harus memenuhi turnover <span class="highlight">3×</span>.</div>
+        </div>
+        <div class="detail-row">
+          <div class="label">Batas Waktu</div>
+          <div class="value">Turnover 3× harus diselesaikan dalam waktu 24 jam sebelum penarikan.</div>
+        </div>
+        <div class="detail-row">
+          <div class="label">Batas Penarikan</div>
+          <div class="value"><span class="highlight">Tidak ada batas penarikan</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2 class="section-title">Game yang Memenuhi Syarat</h2>
+      <div class="games">
+        <div class="game"><div class="game-id">330000087</div><div class="game-name">Angel vs Devil Ultimate Goal Showdown</div></div>
+        <div class="game"><div class="game-id">330000091</div><div class="game-name">Fu Lu Double Fortune</div></div>
+        <div class="game"><div class="game-id">330000074</div><div class="game-name">Galloping Horse Fortune</div></div>
+        <div class="game"><div class="game-id">330000934</div><div class="game-name">Chili Chili Hot</div></div>
+        <div class="game"><div class="game-id">330000043</div><div class="game-name">Lucky Trio Gold Rush</div></div>
+        <div class="game"><div class="game-id">330000069</div><div class="game-name">Mahjong Fortune 3</div></div>
+        <div class="game"><div class="game-id">330000075</div><div class="game-name">Phoenix Blaze Link</div></div>
+        <div class="game"><div class="game-id">330000078</div><div class="game-name">Fortune of the God</div></div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <h2>📜 Syarat & Ketentuan</h2>
+      <ol class="terms">
+        <li>Turnover valid MYR 200 harus diselesaikan dalam game yang memenuhi syarat untuk memicu hadiah Free Spins.</li>
+        <li>Setiap Free Spin memiliki nilai taruhan tetap sebesar MYR 1.</li>
+        <li>Kemenangan yang diperoleh dari Free Spins harus memenuhi persyaratan turnover 3× dalam waktu 24 jam sebelum dapat ditarik.</li>
+        <li>Jika persyaratan turnover tidak diselesaikan dalam waktu 24 jam, kemenangan dari Free Spins akan hangus.</li>
+        <li>VPLUS memiliki hak interpretasi akhir atas promosi ini.</li>
+      </ol>
+      <div class="notice"><strong>Catatan:</strong> Tidak ada batas penarikan untuk kemenangan Free Spins setelah persyaratan turnover dipenuhi.</div>
+    </section>
+
+    <div class="bottom">Kumpulkan Turnover Anda dan Klaim Free Spins!</div>
+    <div class="footer">VPLUS berhak mengubah atau menghentikan promosi sesuai dengan ketentuan yang berlaku.</div>
+  </main>
+</body>
+</html>
